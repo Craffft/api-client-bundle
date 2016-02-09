@@ -1,0 +1,9 @@
+services:
+
+    # Security
+    craffft.api_client.security.user_provider:
+        class: Craffft\ApiClientBundle\Security\ApiKeyUserProvider
+        arguments: ["@doctrine.orm.entity_manager"]
+
+    craffft.api_client.security.api_key_authenticator:
+        class: Craffft\ApiClientBundle\Security\ApiKeyAuthenticator
