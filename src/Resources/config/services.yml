@@ -7,3 +7,4 @@ services:
 
     craffft.api_client.security.api_key_authenticator:
         class: Craffft\ApiClientBundle\Security\ApiKeyAuthenticator
+        public: false
