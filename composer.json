@@ -1,6 +1,6 @@
 {
     "name": "craffft/api-client-bundle",
-    "type": "symfony-bundle",
+    "type": "contao-bundle",
     "description": "API Clients with Token Authentication for Contao",
     "keywords": ["api", "client", "token", "contao"],
     "license": "MIT",
