@@ -3,6 +3,7 @@
     "type": "contao-bundle",
     "description": "API Clients with Token Authentication for Contao",
     "keywords": ["api", "client", "token", "contao"],
+    "homepage":"https://craffft.de",
     "license": "MIT",
     "authors": [
         {
@@ -16,19 +17,21 @@
     },
     "require": {
         "php": ">=5.4.0",
-        "contao/core-bundle": "~4.1"
+        "contao/core-bundle": "~4.4"
+    },
+    "require-dev": {
+        "contao/manager-plugin": "^2.0"
     },
     "conflict": {
-        "contao/core": "*"
+        "contao/core": "*",
+        "contao/manager-plugin": "<2.0 || >=3.0"
+    },
+    "extra": {
+        "contao-manager-plugin": "Craffft\\ApiClientBundle\\ContaoManager\\Plugin"
     },
     "autoload": {
         "psr-4": {
             "Craffft\\ApiClientBundle\\": "src/"
-        }
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-develop": "4.2.x-dev"
         }
     }
 }
